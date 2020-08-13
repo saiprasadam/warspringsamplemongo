@@ -59,6 +59,14 @@
 	</dependencies>
 
 	<build>
+	<plugins>
+	 <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+           <version>3.1.0</version>
+            <configuration>
+                <warName>app</warName>
+            </configuration>
 	<!-- <finalName>''</finalName>
 		<plugins>
 			<plugin>
@@ -66,13 +74,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>-->
-		 <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-           <version>3.1.0</version>
-            <configuration>
-                <warName>app</warName>
-            </configuration>
 	 <!-- <finalName>app</finalName>
 		<plugins>
 			<plugin>
@@ -82,7 +83,6 @@
 		</plugins> -->
 	</plugin>
 	</plugins>
-	</build>
 	</build>
 
 </project>
